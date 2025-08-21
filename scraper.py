@@ -7,6 +7,9 @@ from collections import deque
 import time, os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path = "./.env")
 # There is module called render_template which is used to render html templates from templates directory directly.
 # In Flask, each html page is called template. We can pass variables to thsi template by
 # return render_template("<html_template_name.html", name="<value>") from route function
